@@ -166,7 +166,7 @@ body {
 .khna-img-style {
   width: 15rem;
   height: 15rem;
-  margin: 0.2rem;
+  margin: 0.5rem;
 }
 
 .khna-img-restyle-7 {
@@ -177,6 +177,11 @@ body {
 .content-img-face {
   width: 83%;
   text-align: center;
+}
+
+.botox-img-1 {
+  width: 10rem;
+  height: 15rem;
 }
 
 /*ACORDEON*/
@@ -298,5 +303,46 @@ body {
 @media (max-width: 1199px) {
   html {
     font-size: 8px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navigation-panel {
+    ul {
+      display: block;
+      margin: 0;
+      padding: 0;
+      border-right: 1px solid #fff;
+      border-left: 1px solid #fff;
+      li {
+        margin: 0;
+        text-align: center;
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+        a {
+          font-size: 2rem;
+          display: block;
+        }
+      }
+    }
+  }
+  .header-text {
+    margin-top: 10rem;
+  }
+  .section-header {
+    text-align: center;
+    h2 {
+      display: inline;
+    }
+  }
+  .section-content {
+     .label-style {
+    display: block;
+    margin: 0;
+  }
+  }
+  .footer-map {
+    display: none;
   }
 }
