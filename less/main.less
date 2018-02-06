@@ -60,13 +60,11 @@ body {
   bottom: 1%;
   right: 1%;
   /*transform: translate(-10%);*/
-  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 50px;
   transition: all 0.4s;
   
   &:hover {
     color: darken(#349eea, 30%);
-    background-color: rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -76,9 +74,11 @@ body {
 
 .navigation-panel {
   ul {
+    justify-content: center;
     /*margin: 0;*/
     list-style: none;
     display: flex;
+    text-align: center;
     .header-number {
       color: #fff;
       font-family: 'Comfortaa', cursive;
@@ -180,7 +180,9 @@ body {
     }
   }
 }
-
+.peducure {
+  min-height: 50rem;
+}
 /*IMG STYLE*/
 .khna-img-style {
   width: 10rem;
@@ -269,6 +271,23 @@ body {
 .acord-win {
   transition: all 0.5s;
 }
+
+.well {
+  background-color: transparent;
+  border-color: transparent;
+  padding: 0;
+}
+.btn-style {
+  color: #349eea;
+  font-size: 1.8rem;
+  font-family: 'Comfortaa', cursive;
+  font-weight: bold;
+  display: block;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 
 .tab-style {
   color: #349eea;
