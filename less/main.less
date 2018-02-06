@@ -52,6 +52,24 @@ body {
   }
 }
 
+.icon-up {
+  z-index: 15;
+  font-size: 4rem;
+  color: #349eea;
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  /*transform: translate(-10%);*/
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  transition: all 0.4s;
+  
+  &:hover {
+    color: darken(#349eea, 30%);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
 .nav-overlay {
   background-color: rgba(65, 85, 90, 0.45);
 }
@@ -163,6 +181,7 @@ body {
   }
 }
 
+/*IMG STYLE*/
 .khna-img-style {
   width: 10rem;
   height: 10rem;
@@ -185,7 +204,9 @@ body {
   /*width: 83%;*/
   text-align: center;
 }
-
+.khna-img-width {
+  width: 14rem;
+}
 .margin-img {
   margin: 0.2rem;
 }
@@ -194,11 +215,15 @@ body {
   text-align: center;
 }
 .botox-img-1 {
-  width: 10rem;
-  height: 15rem;
+  width: 15rem;
+  height: 20rem;
+  margin: 0.3rem;
 }
 .botox-img {
-  
+  height: 18rem;
+}
+.two-ea {
+  height: 13rem;
 }
 
 .content-img-lamin {
@@ -206,7 +231,35 @@ body {
 }
 .lamin-image {
   max-height: 10rem;
+  margin: 0.5rem;
 }
+.content-img-wrapping-regen {
+  text-align: center;
+  img {
+    min-width: 10rem;
+    max-height: 10rem;
+  }
+}
+.content-img-wrapping-vitamin {
+  text-align: center;
+  img {
+    min-width: 15rem;
+    max-height: 15rem;
+  }
+}
+.content-img-wrapping-list {
+  text-align: center;
+  img {
+    margin: 0.5rem;
+  }
+}
+
+.home-image {
+  max-width: 8rem;
+  max-height: 8rem;
+  margin-top: 0.2rem;
+}
+/*END IMG STYLE*/
 
 /*ACORDEON*/
 .acord-win-hide {
@@ -227,6 +280,9 @@ body {
   }
 }
 
+.wrapping-hide {
+  display: none;
+}
 
 /*MANICURE NAVIGATIONS*/
 .manicure-hot, .manicure-japan, .manicure-brazil, .manicure-ibx {
@@ -282,6 +338,20 @@ body {
   display: none;
 }
 
+/*WRAPPING*/
+.depila:checked ~ .wrapping-block {
+  display: none;
+}
+.wrapping:checked ~ .wrapping-block {
+  display: block;
+}
+.wrapping:checked ~ .body-depila {
+  display: none;
+}
+
+/*FACE NAVIGATION*/
+
+
 /*Combo Pedicure*/
 .combo:checked ~ .pedicure-combo {
   display: block;
@@ -290,10 +360,17 @@ body {
   display: none;
 }
 
-/*FACE NAVIGATION*/
-
-
-
+/*NEW*/
+.new-src {
+  color: #349eea;
+  font-size: 1.8rem;
+  font-family: 'Comfortaa', cursive;
+  font-weight: bold;
+  &:hover {
+    text-decoration: none;
+    color: lighten(#349eea, 30%);
+  }
+}
 
 /*CONTACT*/
 .contact-text {

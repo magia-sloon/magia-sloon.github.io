@@ -18,20 +18,20 @@
   <div class="header-overlay">
     <nav class="nav-overlay">
       <div class="container">
-        <div class="navigation-panel">
+        <nav class="navigation-panel" id="menu">
           <ul>
-            <li><a href="#manicure" class="src-manicure">Маникюр</a></li>
-            <li><a href="#pedicure" class="src-pedicure">Педикюр</a></li>
-            <li><a href="#face" class="src-face">Уход за лицом</a></li>
-            <li><a href="#body" class="src-body">Уход за телом</a></li>
-            <li><a href="#home" class="src-home">Домашний уход</a></li>
-            <li><a href="#new" class="src-new">Новинки</a></li>
-            <li><a href="#contact" class="src-contact">Контакты</a></li>
+            <li><a href="#manicure" class="src-manicure scrolling">Маникюр</a></li>
+            <li><a href="#pedicure" class="src-pedicure scrolling">Педикюр</a></li>
+            <li><a href="#face" class="src-face scrolling">Уход за лицом</a></li>
+            <li><a href="#body" class="src-body scrolling">Уход за телом</a></li>
+            <li><a href="#home" class="src-home scrolling">Домашний уход</a></li>
+            <li><a href="#new" class="src-new scrolling">Новинки</a></li>
+            <li><a href="#contact" class="src-contact scrolling">Контакты</a></li>
             <!--<li class="header-number">8 (900) 981-01-07<br>
                 8 (821) 671-55-41
             </li>-->
           </ul>
-        </div>
+        </nav>
       </div>
     </nav>
     <div class="header-text">
@@ -39,7 +39,7 @@
       <h1>Магия</h1>
       <p>Маникюр, педикюр,<br> ламенирование ресниц, шугаринг</p>
     </div>
-      <a href="#manicure" class="src-manicure"><i class="icon-down"></i></a>
+      <a href="#manicure" class="src-manicure scrolling"><i class="icon-down"></i></a>
   </div>
   </header>
   
@@ -142,7 +142,7 @@
     </div>
     </div>
   </section>
-  
+  <a href="#header" class="up-header scrolling"><i class="icon-up"></i></a>
   <!--Pedicure-->
   <section class="section-prod section-color pedicure" id="pedicure">
     <div class="container">
@@ -203,11 +203,11 @@
           <div class="content-img-lamin">
             <!--<img src="/img/face/lamin-1.png" alt="">
             <img src="/img/face/lamin-2.png" alt="">-->
-            <img src="/img/face/lamin-3.jpg" alt="" class="lamin-image">
-            <img src="/img/face/lamin-4.jpg" alt="" class="lamin-image">
+            <!--<img src="/img/face/lamin-3.jpg" alt="" class="lamin-image">
+            <img src="/img/face/lamin-4.jpg" alt="" class="lamin-image">-->
             <img src="/img/face/botox-3.jpg" alt="" class="lamin-image two-ea">
-            <img src="/img/face/lamin-5.jpg" alt="" class="lamin-image">
-            <img src="/img/face/lamin-6.jpg" alt="" class="lamin-image">           
+            <!--<img src="/img/face/lamin-5.jpg" alt="" class="lamin-image">
+            <img src="/img/face/lamin-6.jpg" alt="" class="lamin-image">-->           
           </div>
         </div>
         <div><a href="#prot-twist" class="tab tab-style">Белковое востановление "Protein Twist"</a></div>
@@ -253,6 +253,10 @@
               <li>реснице – 1500 руб.</li>
               <li>ресницы + брови – 1800 руб.</li>
             </ul>
+            <div class="content-img">
+              <img src="/img/face/lamin-3.jpg" alt="" class="lamin-image">
+              <img src="/img/face/lamin-4.jpg" alt="" class="lamin-image">
+            </div>
         </div>
         <div><a href="#prot-botox" class="tab tab-style">Протеиновая реконструкция "Protein Botox"</a></div>
         <div class="acord-win acord-win-hide" id="prot-botox">
@@ -296,9 +300,9 @@
             <div class="content-img-face-first">
               <img src="img/face/khna-hair-1.png" alt="" class="khna-img-style-first">
               <!--<img src="img/face/khna-hair-2.png" alt="" class="khna-img-style-first">-->
-              <img src="img/face/khna-hair-3.png" alt="" class="khna-img-style-first">
+              <img src="img/face/khna-hair-3.png" alt="" class="khna-img-style-first khna-img-width">
               <!--<img src="img/face/khna-hair-4.png" alt="" class="khna-img-style">-->
-              <img src="img/face/khna-hair-5.png" alt="" class="khna-img-style-first">
+              <img src="img/face/khna-hair-5.png" alt="" class="khna-img-style-first khna-img-width">
               <img src="img/face/khna-hair-6.png" alt="" class="khna-img-style-first">
             </div>
             <p>
@@ -370,6 +374,8 @@
       <div class="section-content white">
         <input type="radio" id="depila" class="depila" name="body" checked>
         <label for="depila" class="label-depila label-style" name="body">Депиляция</label>
+        <input type="radio" id="wrapping" class="wrapping" name="body">
+        <label for="wrapping" class="label-wrapping label-style" name="body">Обертывание</label>
         
         <!--BODY CONTENT-->
         <div class="content body-depila">
@@ -412,6 +418,94 @@
           </div>
           </div>
         </div>
+        <div class="content wrapping-block">
+         <p>
+           Обертывания, как ухаживающие процедуры для сохранения молодости и красоты тела, впервые стали практиковаться в Египте. Средневековые красавицы применяли обертывания с горчицей, которые не только поддерживали гладкость кожи, но и помогали в борьбе с простудными и кожными заболеваниями. Современная история салонного обертывания началась в США в 1961 году, в одном из американских салонов решили возобновить эту древнюю ухаживающую процедуру. В то время она была довольно дорогостоящей и лишь по прошествии нескольких десятилетий, в 1990-х стала более доступной. Обёртывание тела считается эффективной косметической процедурой, которая позволяет избавиться от многих недостатков на коже.<br> Основными противопоказаниями для обертывания являются:
+         </p>
+         <ul>
+           <li>Заболевания сердечно-сосудистой системы (ИБС, пороки сердца, гипертоническая болезнь и т.д.)</li>
+           <li>Кожные заболевания в стадии обострения, например, псориаз, дерматит и т.д</li>
+           <li>Грибковые заболевания кожи, волос или ногтей</li>
+           <li>Раны, ссадины, трещины, сыпь или другие повреждения кожного покрова</li>
+           <li>Беременность</li>
+           <li>Гинекологические заболевания (в этом случае нельзя применять обертывания области живота и боков, а на остальных частях тела они разрешены к использованию)</li>
+           <li>Онкологические заболевания</li>
+           <li>Заболевания эндокринной системы (например, сахарный диабет, гипотиреоз и т.д.)</li>
+           <li>Аллергические реакции на компоненты конкретного обертывания</li>
+         </ul>
+          <div class="acordeon">
+            <div><a href="#wrapping-regen" class="tab-body-wrapping tab-style">Глиняное обертывание «Идеальные формы»</a></div>
+            <div class="acord-win-body-wrapping wrapping-hide" id="wrapping-regen">
+              <p>
+                 Глиняное обертывание «Идеальные формы» (регенерирующие)<br> Регенерирующие обертывание предназначено для уменьшения и предотвращения появления растяжек. Улучшает регенеративные процессы, кровообращение, стимулирует выработку коллагена и эластина, устраняет отёчность, разглаживает и подтягивает кожу, повышает тонус и упругость, сглаживает целлюлитные бугорки.  Активный минеральный состав наполняет клетки витаминами и минералами, очищает, увлажняет и защищает кожу.<br> Активные компоненты: 
+              </p>
+              <ul>
+                <li>Голубая глина</li>
+                <li>Природный эластин из семян тыквы</li>
+                <li>Бета-каротин из мякоти тыквы</li>
+                <li>Витамин С</li>
+                <li>Витамин Е</li>
+                <li>Пальмовое масло</li>
+              </ul>
+              <p>
+                Курс рассчитан на 8 – 12 процедур 2 – 3 раза в неделю.
+              </p>
+              <!--<div class="content-img-wrapping-regen">
+                <img src="img/body/wrapping/wrapping-regen-1.png" alt="">
+                <img src="img/body/wrapping/wrapping-regen-2.png" alt="">
+                <img src="img/body/wrapping/wrapping-regen-3.png" alt="">
+              </div>-->
+          </div>
+          <div><a href="#wrapping-vitamin" class="tab-body-wrapping tab-style">Обертывание «Витаминный заряд»</a></div>
+            <div class="acord-win-body-wrapping acord-win-hide" id="wrapping-vitamin">
+              <p>
+                Обертывание «Витаминный заряд» (восстанавливающие)<br> Процедура обертывания «Витаминный заряд» позволяет восстановить коллагеновые волокна на клеточном уровне, защитить кожу от ультрафиолетовых лучей и пигментации, повысить тургор, активизировать обменные процессы, улучшить лимфодренаж, адсорбировать токсичные вещества, вывести из организма лишнюю жидкость и насытить кожу кремнием, который необходим для синтеза коллагена. Уже после первой процедуры кожа становится заметно более гладкой, бархатистой, эластичной и упругой.<br> Активные компоненты:
+              </p>
+              <ul>
+                <li>Томатный ликопин</li>
+                <li>Диатомовая земля</li>
+                <li>Белая глина</li>
+                <li>Экстракты семени льна</li>
+                <li>Экстракт рожкового дерева</li>
+                <li>Ксантановая камедь</li>
+                <li>Глицерин</li>
+              </ul>
+              <!--<div class="content-img-wrapping-vitamin">
+                <img src="img/body/wrapping/wrapping-vitamin-1.png" alt="">
+              </div>-->
+              <p>
+                Рекомендуемый курс — 10-12 процедур 2-3 раза в неделю.
+              </p>
+          </div>
+          <div><a href="#wrapping-list" class="tab-body-wrapping tab-style">Листовая ламинария</a></div>
+            <div class="acord-win-body-wrapping acord-win-hide" id="wrapping-list">
+              <p>
+                Листовая ламинария /живые водоросли для обертывания<br> Морские водоросли - самые древние представители растительного мира, за миллионы лет существования они накопили всю мудрость эволюции. Ламинария богата клетчаткой и растительным белком, отличается крайне высоким содержанием витаминов А, В6, В12, С, D и РР и микроэлементов, таких как железо, кальций, марганец, хром, калий и фосфор, а также йодом. При обертывании ламинария дает отличный антицеллюлитный и лимфодренажный эффект, способствует снижению вес и объемов, уменьшению стрий и дряблости кожи, повышает общий тонус и эластичность кожи. Кроме того, ламинария отлично выводит из организма шлаки и токсины. При нормотермическом обертывание обеспечивается одновременный вывод из организма шлаков и насыщение организма микроэлементами, витаминами и биологически активными веществами. Холодное обертывание эффективно при профилактике функции венозной системы, варикозного расширения вен, улучшает отток лимфатической жидкости. Комбинированное обертывание сочетает нормотермическое и холодное обертывания на разных участках тела. Чаще всего это сочетание плотных жировых отложений на одних участках и пониженный тонус кожи на других.<br> Противопоказания:
+              </p>
+              <ul>
+                <li>Аллергия на йод и продукты его содержащие</li>
+                <li>Гиперфункция щитовидной железы</li>
+                <li>Не зажившие раны, ожоги, царапины и т.д</li>
+                <li>Инфекционные заболевания кожи в стадии обострения</li>
+                <li>Аллергические реакции на коже (зуд, крапивница и т.п.)</li>
+                <li>Тяжелое течение сахарного диабета</li>
+                <li>Тяжелая форма гипертонии</li>
+                <li>Беременность и период лактации</li>
+                <li>Период менструации</li>
+                <li>Варикозное расширение вен (для горячего обертывания)</li>
+                <li>Тромбофлебит и тромбоз</li>
+                <li>Онкологические заболевания</li>
+              </ul>
+              <div class="content-img-wrapping-list">
+                <img src="img/body/wrapping/wrapping-list-1.png" alt="">
+                <img src="img/body/wrapping/wrapping-list-2.png" alt="">
+              </div>
+              <p>
+                Курс обертываний – 6-12 процедур 2 раза в неделю.
+              </p>
+          </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -425,12 +519,56 @@
       <div class="content">
         <div class="media">
           <div class="media-left">
-              <img class="media-object" src="/img/home/locion.png" alt="locion">
+              <img class="media-object home-image" src="/img/home/locion.png" alt="locion">
           </div>
           <div class="media-body">
             <h4 class="media-heading white">ЛОСЬОН – ИНГИБИТОР SugaringPRO</h4>
             <p>
               Лосьон-ингибитор предупреждает появление вросших волос, уменьшает воспаление и раздражение кожи, увлажняет и смягчает кожу.Благодаря экстракту лимона способствует уменьшению пигментных пятен, оставшихся после вросших волос.  Рекомендуется использовать на следующий день после депиляции. Наносить ежедневно на сухую кожу. Не смывать! Использовать в течение 10-15дней после депиляции.
+            </p>
+          </div>
+      </div>
+      <div class="media">
+          <div class="media-left">
+              <img class="media-object home-image" src="/img/home/sexyBrow.png" alt="sexy">
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading white">Sexy Brow Henna Масло Усьмы для Ресниц</h4>
+            <p>
+              Масло усьмы получено методом холодного прессования и отжима. Масло усьмы наиболее эффективно для стимуляции роста волосков. При применении показывает быстрые результаты. После короткого времени использования, появляются сначала тонкие пушковые волосы, они уплотняются и формируется обычный волосок.  Очень удобное применение для восстановления ресниц.
+            </p>
+          </div>
+      </div>
+      <div class="media">
+          <div class="media-left">
+              <img class="media-object home-image" src="/img/home/sexyBrowHenna.png" alt="sexy">
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading white">Sexy Brow Henna Масло Усьмы для Бровей</h4>
+            <p>
+              Масло усьмы получено методом холодного прессования и отжима. Эффективно для стимуляции роста волосков. При использовании показывает быстрые результаты, появляются сначала тонкие пушковые волосы, затем они уплотняются и формируется обычный волосок, в данном случае, Вы сами решаете необходимо оставить данные волоски или они нуждаются в корректировке. Очень удобное применение для восстановления линии бровей , в случае если Вас не устраивает ширина или длина линии бровей.
+            </p>
+          </div>
+      </div>
+      <div class="media">
+          <div class="media-left">
+              <img class="media-object home-image" src="/img/home/inovatorCosmetic.png" alt="innoation-cosmetic">
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading white">Innovator Cosmetics, Масло для роста ресниц</h4>
+            <p>
+              Натуральный состав с комплексом масел для роста ресниц в удобной упаковке с микрощеточкой. При регулярном использовании показывает быстрые результаты — сначала появляются тонкие пушковые волосы, затем они уплотняются, формируя обычный волосок.
+            </p>
+          </div>
+      </div>
+      <div class="media">
+          <div class="media-left">
+              <img class="media-object home-image" src="/img/home/inovatorCosmetic2.png" alt="innoation-cosmetic">
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading white">Innovator Cosmetics, Масло усьмы для роста бровей</h4>
+            <p>
+              Масло листьев и семян вайды красильной для стимуляции роста бровей.
             </p>
           </div>
       </div>
@@ -445,73 +583,9 @@
         <h2>Новинки</h2>
       </div>
       <div class="content">
-        <p>
-          СКОРО!<br> ЛИСТОВАЯ ЛАМИНАРИЯ / ЖИВЫЕ ВОДОРОСЛИ для обертывания<br> Ламинария богата клетчаткой и растительным белком, отличается крайне высоким содержанием витаминов А, В6, В12, С, D и РР и микроэлементов, таких как железо, кальций, марганец, хром, калий и фосфор, а также йодом. При обертывании ламинария дает отличный антицеллюлитный и лимфодренажный эффект, способствует снижению вес и объемов, уменьшению стрий и дряблости кожи, повышает общий тонус и эластичность кожи. Кроме того, ламинария отлично выводит из организма шлаки и токсины.
-        </p>
-        <p>
-          СКОРО!<br> РЕГЕНИРИРУЮЩИЕ ОБЕРТЫВАНИЕ С ПРИРОДНЫМ ЭЛАСТИНОМ И БЕТА-КАРОТИНОМ ДЛЯ ТЕЛА 
-        </p>
-        <ul>
-          <li>
-            Принимает активное участие в формировании волокон эластина и коллагена
-          </li>
-          <li>
-            Устраняет растяжки и препятствует их возникновению
-          </li>
-          <li>
-            Питает клетки минеральными элементами и витаминами
-          </li>
-          <li>
-            Препятствует преждевременному старению клеток
-          </li>
-          <li>
-            Очищает кожу
-          </li>
-          <li>
-            Оказывает эффективное увлажняющее действие
-          </li>
-          <li>
-            Предотвращает сухость кожи
-          </li>
-          <li>
-            Усиливает регенеративные процессы
-          </li>
-          <li>
-            Улучшает циркуляцию крови в тканях
-          </li>
-        </ul>
-        <p>
-          СКОРО!<br> ВОССТАНАВЛИВАЮЩИЕ ОБЕРТЫВАНИЕ С ЛИКОПИНОМ
-        </p>
-        <ul>
-          <li>
-            Cпособствует выведению лишней жидкости из тканей
-          </li>
-          <li>
-            Улучшает клеточное дыхание
-          </li>
-          <li>
-            Выводит токсины
-          </li>
-          <li>
-            Восстанавливает клеточную структуру коллагена
-          </li>
-          <li>
-            Стимулирует синтез коллагена
-          </li>
-          <li>
-            Отбеливает кожу
-          </li>
-          <li>
-            Оказывает противовоспалительное действие
-          </li>
-          <li>
-            Выравнивает поверхность кожи
-          </li>
-          <li>
-            Придаёт коже мягкость и бархатистость
-          </li>
-        </ul>
+       <a href="#wrapping-regen" class="new-src">Глиняное обертывание «Идеальные формы»</a><br>
+       <a href="#wrapping-vitamin" class="new-src">Обертывание «Витаминный заряд»</a><br>
+       <a href="#wrapping-list" class="new-src">Листовая ламинария</a>
       </div>
     </div>
   </section>
@@ -564,13 +638,13 @@
         <div class="col-lg-3 col-md-6">
           <div class="footer-nav">
             <ul>
-              <li><a href="#header" class="header-src">Главная</a></li>
-              <li><a href="#manicure">Маникюр</a></li>
-              <li><a href="#pedicure">Педикюр</a></li>
-              <li><a href="#face">Уход за лицом</a></li>
-              <li><a href="#body">Уход за телом</a></li>
-              <li><a href="#home">Домашний уход</a></li>
-              <li><a href="#new">Новинки</a></li>
+              <li><a href="#header" class="header-src scrolling">Главная</a></li>
+              <li><a href="#manicure" class="scrolling">Маникюр</a></li>
+              <li><a href="#pedicure" class="scrolling">Педикюр</a></li>
+              <li><a href="#face" class="scrolling">Уход за лицом</a></li>
+              <li><a href="#body" class="scrolling">Уход за телом</a></li>
+              <li><a href="#home" class="scrolling">Домашний уход</a></li>
+              <li><a href="#new" class="scrolling">Новинки</a></li>
             </ul>
           </div>
         </div>
@@ -579,49 +653,8 @@
   </footer>
   
   <!--SCRIPT-->
-  <script
-  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-  crossorigin="anonymous"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
   <!--ACORDEON-->
-  <script>
-    /*FACE*/
-    $(document).ready(function(){
-        var tab = $('.tab');
-        tab.click(function(){
-           var target = $(this).attr('href');
-            $('.acord-win').hide();
-            $(target).show();
-        });
-    });
-    /*BODY*/
-    $(document).ready(function(){
-        var tab_body = $('.tab-body');
-        tab_body.click(function(){
-           var target = $(this).attr('href');
-            $('.acord-win-body').hide();
-            $(target).show("slow");
-        });
-    });
-    /*SCROLL*/
-    $(document).ready(function(){
-    $('.src-manicure').click(function(){
-       $('html, body').animate({scrollTop:$('#manicure').position().top}, 2000);
-    });
-    $('.src-pedicure').click(function(){
-       $('html, body').animate({scrollTop:$('#pedicure').position().top}, 2000);
-    });
-    $('.src-face').click(function(){
-       $('html, body').animate({scrollTop:$('#face').position().top}, 2000);
-    });
-    $('.src-body').click(function(){
-       $('html, body').animate({scrollTop:$('#body').position().top}, 2000);
-    });
-    $('.arrow-home').click(function(){
-       $('html, body').animate({scrollTop:$('#home').position().top}, 2000);
-    });
-});
-    
-  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>
