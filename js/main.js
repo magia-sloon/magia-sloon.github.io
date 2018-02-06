@@ -3,8 +3,8 @@ $(document).ready(function(){
     var tab = $('.tab');
     tab.click(function(){
        var target = $(this).attr('href');
-        $('.acord-win').hide();
-        $(target).show();
+        $('.acord-win').slideUp();
+        $(target).slideDown();
     });
 });
 /*BODY SHUGARING*/
@@ -12,8 +12,8 @@ $(document).ready(function(){
     var tab_body = $('.tab-body');
     tab_body.click(function(){
        var target = $(this).attr('href');
-        $('.acord-win-body').hide();
-        $(target).show("slow");
+        $('.acord-win-body').slideUp();
+        $(target).slideDown();
     });
 });
 /*BODY WRAPPING*/
@@ -21,8 +21,8 @@ $(document).ready(function(){
     var tab_body_wrapping = $('.tab-body-wrapping');
     tab_body_wrapping.click(function(){
        var target = $(this).attr('href');
-        $('.acord-win-body-wrapping').hide();
-        $(target).show("slow");
+        $('.acord-win-body-wrapping').slideUp();
+        $(target).slideDown();
     });
 });
 
@@ -37,10 +37,10 @@ $(document).ready(function(){
     });
 });
 
-$(document).ready(function(){
+/*$(document).ready(function(){
   $('.tab-style').on("click", function (event) {
       event.preventDefault();
     var tab_down = $(this).attr('href');
     $(tab_down).fadeIn();
     });
-});
+});*/
